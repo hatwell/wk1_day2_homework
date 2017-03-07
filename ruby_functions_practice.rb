@@ -72,10 +72,11 @@ end
 
 #Given the radius of a sphere calculate the volume
 def volume_of_sphere(radius)
-  return (radius**3)*(4/3)*Math.pi
+  volume = (radius**3)*(4.to_f/3)*Math::PI
+  return volume.round(1)
 end
 
 #Given a value in farenheit, convert this into celsius.
 def fahrenheit_to_celsius(temp_in_fahrenheit)
-  return (temp_in_fahrenheit-30)/2
+  return (temp_in_fahrenheit-32)*5/9
 end

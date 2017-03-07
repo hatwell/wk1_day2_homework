@@ -66,19 +66,38 @@ class Functions_Practice < MiniTest::Test
 
 
 
+
+  def test_divide()
+    divide_result = divide( 10, 2 )
+    assert_equal( 5, divide_result )
+  end
+
   #Further
 
   #Given the length of a side of a cube calculate the volume
   def test_volume_of_cube()
+    cube_volume_result_1 = volume_of_cube(3)
+    cube_volume_result_2 = volume_of_cube(1)
+    assert_equal(cube_volume_result_1, 27)
+    assert_equal(cube_volume_result_2, 1)
   end
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
+    volume_of_sphere_1 = volume_of_sphere(3)
+    volume_of_sphere_2 = volume_of_sphere(1)
+    assert_equal(volume_of_sphere_1, 113.1)
+    assert_equal(volume_of_sphere_2, 4.2 )
+
 
   end
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
+    temp_in_celcius_1 = fahrenheit_to_celsius(32)
+    temp_in_celcius_2 = fahrenheit_to_celsius(100)
+    assert_equal(0, temp_in_celcius_1)
+    assert_equal(37, temp_in_celcius_2)
   end
 
 
