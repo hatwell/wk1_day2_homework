@@ -97,7 +97,7 @@ class Functions_Practice < MiniTest::Test
     temp_in_celcius_1 = fahrenheit_to_celsius(32)
     temp_in_celcius_2 = fahrenheit_to_celsius(100)
     assert_equal(0, temp_in_celcius_1)
-    assert_equal(37, temp_in_celcius_2)
+    assert_equal(37.8, temp_in_celcius_2)
   end
 
 
